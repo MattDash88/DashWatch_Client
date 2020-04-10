@@ -27,7 +27,7 @@ import chartFunctions from './labs_functions/chartFunctions';
 const getLabsCountryData = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsCountryWalletData`)
+            fetch(`http://localhost:8080/dataset/labsCountryWalletData`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)
@@ -40,7 +40,7 @@ const getLabsCountryData = () => {
 const getWalletAndroidGlobalData = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsWalletAndroidGlobalData`)
+            fetch(`http://localhost:8080/dataset/labsWalletAndroidGlobalData`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)
@@ -53,7 +53,7 @@ const getWalletAndroidGlobalData = () => {
 const getOtherWalletData = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsOtherWalletData`)
+            fetch(`http://localhost:8080/dataset/labsOtherWalletData`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)

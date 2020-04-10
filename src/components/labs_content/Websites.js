@@ -21,7 +21,7 @@ import chartFunctions from './labs_functions/chartFunctions';
 const getWebsitesCountryData = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsWebsiteCountryData`)
+            fetch(`http://localhost:8080/dataset/labsWebsiteCountryData`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)
@@ -35,7 +35,7 @@ const getWebsitesCountryData = () => {
 const getWebsitesGlobalData = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsWebsiteGlobalData`)
+            fetch(`http://localhost:8080/dataset/labsWebsiteGlobalData`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)

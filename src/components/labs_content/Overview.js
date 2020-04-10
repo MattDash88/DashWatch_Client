@@ -26,7 +26,7 @@ import tableFunctions from './labs_functions/tableFunctions';
 const getWalletTopLists = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsWalletTopLists`)
+            fetch(`http://localhost:8080/dataset/labsWalletTopLists`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)
@@ -40,7 +40,7 @@ const getWalletTopLists = () => {
 const getWebsiteTopLists = () => {
     return (
         new Promise((resolve) => {
-            fetch(`http://localhost:8080/api/dataset/labsWebsiteTopLists`)
+            fetch(`http://localhost:8080/dataset/labsWebsiteTopLists`)
                 .then((res) => res.json()
                     .then((res) => {
                         resolve(res)
