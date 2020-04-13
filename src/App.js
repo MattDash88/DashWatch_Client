@@ -10,7 +10,7 @@ import {
 import queryString from 'query-string';
 //
 
-import './assets/fomantic/dist/semantic.css';
+//import './assets/fomantic/src/semantic.less';
 import {
   Container,
   Dropdown,

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/fomantic/dist/semantic.css';
+//import '../../assets/fomantic/src/semantic.less';
 import {
     Dropdown,
     Form,
